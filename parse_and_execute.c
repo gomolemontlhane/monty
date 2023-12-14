@@ -41,6 +41,7 @@ void parse_and_execute(stack_t **stack, char *line, unsigned int line_number)
 	else
 	{
 		fprintf(stderr, "L%u: unknown instruction %s\n", line_number, opcode);
+		free_stack(*stack);
 		exit(EXIT_FAILURE);
 	}
 }

@@ -47,3 +47,19 @@ void pall(stack_t **stack, unsigned int line_number)
 		current = current->next;
 	}
 }
+
+/**
+ *free_stack - Free the stack
+ *@stack: Pointer to the stack
+ */
+void free_stack(stack_t *stack)
+{
+	stack_t *current;
+
+	while (stack)
+	{
+		current = stack;
+		stack = stack->next;
+		free(current);
+	}
+}

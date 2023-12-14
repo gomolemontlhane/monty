@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 		/*You'll need to parse the line and execute the corresponding command */
 		parse_and_execute(&stack, line, line_number);
 	}
-
+	free_stack(stack);
 	free(line);
 	fclose(file);
 	return (EXIT_SUCCESS);
