@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		line_number++;
 		/*Process each line of Monty bytecode here */
 		/*You'll need to parse the line and execute the corresponding command */
-		/*Example: parse_and_execute(&stack, line, line_number); */
+		parse_and_execute(&stack, line, line_number);
 	}
 
 	free(line);

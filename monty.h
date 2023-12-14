@@ -2,6 +2,7 @@
 #define MONTY_H
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  *struct stack_s - Doubly linked list representation of a stack (or queue)
@@ -24,6 +25,7 @@ typedef struct stack_s
  */
 void push(stack_t **stack, unsigned int line_number, int n);
 void pall(stack_t **stack, unsigned int line_number);
+void parse_and_execute(stack_t **stack, char *line, unsigned int line_number);
 
 
 #endif /*MONTY_H */
