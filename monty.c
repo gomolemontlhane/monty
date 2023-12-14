@@ -40,7 +40,7 @@ void pall(stack_t **stack, unsigned int line_number)
 
 	(void) line_number;	/* Avoid unused parameter warning */
 
-       	current = *stack;
+	current = *stack;
 	while (current)
 	{
 		printf("%d\n", current->n);

@@ -19,6 +19,7 @@ void parse_and_execute(stack_t **stack, char *line, unsigned int line_number)
 	{
 		/* Parse the integer value */
 		char *arg = strtok(NULL, " \t\n");
+
 		if (!arg)
 		{
 			fprintf(stderr, "L%u: usage: push integer\n", line_number);
